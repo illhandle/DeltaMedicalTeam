@@ -65,7 +65,7 @@
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.csc131.deltamedicalteam.ui.profile.ProfileFragment"
+        android:name="com.csc131.deltamedicalteam.ui.profile.ProfileAppointmentFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/fragment_profile" />
 

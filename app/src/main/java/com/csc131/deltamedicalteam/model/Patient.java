@@ -25,6 +25,8 @@ public class Patient implements Parcelable {
     private Medication medication;
     private String rhFactor;
     private String email;
+    private String emergencyName;
+    private String emergencyPhone;
 
     private List<String> specificAllergies;
     private HealthConditions healthConditions;
@@ -40,7 +42,7 @@ public class Patient implements Parcelable {
         this.address = address;
         this.ageFormat = ageFormat;
         this.bloodGroup = bloodGroup;
-        //this.dob = dob; // Temporarily disable dob field
+        this.dob = dob; // Temporarily disable dob field
         this.fName = fName;
         this.lName = lName;
         this.sex = sex;
@@ -52,6 +54,8 @@ public class Patient implements Parcelable {
         this.email = email;
         this.specificAllergies = specificAllergies;
         this.healthConditions = healthConditions;
+        this.emergencyName = emergencyName;
+        this.emergencyPhone = emergencyPhone;
     }
 
     protected Patient(Parcel in) {
@@ -70,6 +74,8 @@ public class Patient implements Parcelable {
         imageResource = in.readInt();
         email = in.readString();
         specificAllergies = in.createStringArrayList();
+        emergencyName = in.readString();
+        emergencyPhone = in.readString();
     }
 
     public  String getDocumentId() {
@@ -99,14 +105,19 @@ public class Patient implements Parcelable {
         return ageFormat;
     }
 
-//    public String getBloodGroup() {
-//        return bloodGroup;
-//    }
+    public String getBloodGroup() {
+      return bloodGroup;
+   }
 
      public String getDob() {
         return dob;
     } // Temporarily disable dob field
-
+    public String getEmergencyName() {
+        return emergencyName;
+    }
+    public String getEmergencyPhone() {
+        return emergencyPhone;
+    }
     public String getfName() {
         return fName;
     }

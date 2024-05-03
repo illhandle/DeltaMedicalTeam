@@ -62,86 +62,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_large"
-                android:orientation="vertical">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/grey_10" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingTop="@dimen/spacing_large"
-                    android:paddingBottom="@dimen/spacing_large">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:clickable="true"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="50"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                            android:textColor="@color/blue_500" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/spacing_medium"
-                            android:text="Patients"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                            android:textColor="@color/grey_60" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:clickable="true"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="7"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                            android:textColor="@color/blue_500" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/spacing_medium"
-                            android:text="Appointments"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                            android:textColor="@color/grey_60" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/grey_10" />
-
-            </LinearLayout>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -178,20 +98,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Age"
+                        android:text="Email"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                         android:textColor="@color/blue_500"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/patient_age"
+                        android:id="@+id/profile_email"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/spacing_medium"
-                        android:text="AGE#"
+                        android:text="email@example.com"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                         android:textColor="@color/grey_60" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -209,7 +128,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Email"
+                            android:text= "Blood Type"
                             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                             android:textColor="@color/blue_500"
                             android:textStyle="bold" />
@@ -224,14 +143,13 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/profile_email"
+                        android:id="@+id/patient_bloodGroup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/spacing_medium"
-                        android:text="email@example.com"
+                        android:text="6525"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                         android:textColor="@color/grey_60" />
-
                 </LinearLayout>
 
             </LinearLayout>
@@ -266,6 +184,7 @@
                             android:textStyle="bold" />
 
                         <ImageButton
+                            android:id="@+id/edit_patientphone_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:layout_weight="1"
@@ -342,7 +261,7 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="end"
                         android:orientation="horizontal">
 
@@ -354,6 +273,7 @@
                             android:textColor="@color/blue_500"
                             android:textStyle="bold" />
 
+
                         <ImageButton
                             android:id="@+id/edit_marital_btn"
                             android:layout_width="wrap_content"
@@ -361,12 +281,13 @@
                             android:layout_weight="1"
                             app:srcCompat="@drawable/ic_create" />
 
+
                     </LinearLayout>
 
                     <TextView
                         android:id="@+id/patient_martialStatus"
-                        android:layout_width="102dp"
-                        android:layout_height="34dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
                         android:layout_marginTop="@dimen/spacing_medium"
                         android:text="meow"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
@@ -395,6 +316,7 @@
                             android:textStyle="bold" />
 
                         <ImageButton
+                            android:id="@+id/edit_patientaddress_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:layout_weight="1"
@@ -444,7 +366,7 @@
                             android:textStyle="bold" />
 
                         <ImageButton
-                            android:id="@+id/imageButton"
+                            android:id="@+id/edit_emergencyContact_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:layout_weight="1"
@@ -482,7 +404,7 @@
                             android:textStyle="bold" />
 
                         <ImageButton
-                            android:id="@+id/imageButton2"
+                            android:id="@+id/edit_emergencyPhone_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:layout_weight="1"
@@ -499,176 +421,6 @@
                         android:textColor="@color/grey_60" />
 
                 </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/spacing_xlarge"
-                android:layout_marginTop="@dimen/spacing_large"
-                android:layout_marginRight="@dimen/spacing_xlarge"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Emergency Contact"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                            android:textColor="@color/blue_500"
-                            android:textStyle="bold" />
-
-                        <ImageButton
-                            android:id="@+id/imageButton3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="40dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/ic_create" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
-                        android:text="6525"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:textColor="@color/grey_60" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Address"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                            android:textColor="@color/blue_500"
-                            android:textStyle="bold" />
-
-                        <ImageButton
-                            android:id="@+id/imageButton4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="40dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/ic_create" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
-                        android:text="160th St, Fresh Meadows, NY, 11365"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:textColor="@color/grey_60" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/spacing_xlarge"
-                android:layout_marginTop="@dimen/spacing_large"
-                android:layout_marginRight="@dimen/spacing_xlarge"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Emergency Contact"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                            android:textColor="@color/blue_500"
-                            android:textStyle="bold" />
-
-                        <ImageButton
-                            android:id="@+id/imageButton5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="40dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/ic_create" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
-                        android:text="6525"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:textColor="@color/grey_60" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Address"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                            android:textColor="@color/blue_500"
-                            android:textStyle="bold" />
-
-                        <ImageButton
-                            android:id="@+id/imageButton6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="40dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/ic_create" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
-                        android:text="160th St, Fresh Meadows, NY, 11365"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:textColor="@color/grey_60" />
-
-                </LinearLayout>
-
 
             </LinearLayout>
 
